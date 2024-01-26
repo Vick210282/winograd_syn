@@ -5,7 +5,7 @@ reg  [10*5-1:0] D;
 reg  clk, rst;
 wire [10*2-1:0] Z;
 
-wc DUT_WC(.clk(clk),
+WC DUT_WC(.clk(clk),
 			.rst(rst),
 			.D(D),
 			.Z(Z)
