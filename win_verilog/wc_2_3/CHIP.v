@@ -10,7 +10,7 @@ module CHIP (clk, rst, D, Z);
 	wire [10-1:0] i_Z;
 	wire n_Logic0_, n_Logic1_;
 
-	WC_2_3 top (.rst(i_rst), .clk(i_clk), .D(i_D), .Z(i_Z));
+	WC top (.rst(i_rst), .clk(i_clk), .D(i_D), .Z(i_Z));
 
 	XMD ipad_CLK    ( .I(clk), .PU(n_Logic0_), .PD(n_Logic0_), .SMT(n_Logic0_), .O(i_clk) );
 	XMD ipad_RESET_ ( .I(rst), .PU(n_Logic0_), .PD(n_Logic0_), .SMT(n_Logic0_), .O(i_rst) );
